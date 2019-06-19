@@ -200,6 +200,7 @@ public interface ProcessDeploymentApi {
 			@RequestParam(value = "tenantId", required = false) String tenantId,
 			@RequestParam(value = "tenantIdLike", required = false) String tenantIdLike,
 			@RequestParam(value = "withoutTenantId", required = false) Boolean withoutTenantId,
+			@RequestParam(value = "parentDeploymentId", required = false) String parentDeploymentId,
 			@RequestParam(value = "sort", required = false) String sort);
 
 	/**

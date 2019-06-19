@@ -20,6 +20,7 @@ import java.util.Objects;
 
 import org.springframework.validation.annotation.Validated;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Validated
@@ -68,6 +69,7 @@ public class ProcessDefinitionResponse {
 	private Boolean suspended = null;
 
 	@JsonProperty("startFormDefined")
+	@JsonAlias({ "hasStartForm" })
 	private Boolean startFormDefined = null;
 
 	public ProcessDefinitionResponse id(String id) {
